@@ -2,11 +2,24 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+        <link rel="stylesheet" href="style.css">
         <title>Mon résumé</title>
     </head>
     <body>
-        <h1>Rémi DUMESNIL</h1>
-        <img src="https://avatars.githubusercontent.com/u/114658825?v=4" height="200" alt="Meliodas"/><hr>
+        <div class="mb-5">
+            <div class="p-5 text-center bg-body-tertiary">
+              <div class="container ">
+                <h1 class="text-body-emphasis">Profil</h1>
+                <img class="profile-img mt-4" src="https://avatars.githubusercontent.com/u/114658825?v=4" height="200" alt="Meliodas"/>
+                <p class="col-lg-8 mt-2 lead">
+                  Rémi Dumesnil
+                </p>
+              </div>
+            </div>
+          </div>
+        <!-- <h1>Rémi DUMESNIL</h1>
+        <img src="https://avatars.githubusercontent.com/u/114658825?v=4" height="200" alt="Meliodas"/><hr> -->
         <h2>Résumé :</h2>
         <p>Je suis actuellement en 1ère année d'études à EPITECH - Nancy, je souhaite devenir un web développeur full-stack.</p><hr>
         <h2>Diplôme(s) :</h2>
@@ -22,22 +35,44 @@
                 <li>Nettoyage de chantiers</li>
             </ul>
         </ul><hr>
-        <h2>Compétences :</h2>
-        <ul>
-            <li>Langage C :</li>
-            <ul>
-                <li>Projet graphique, refonte d'un jeu type “Duck Hunt”</li>
-                <li>Projet visant à afficher une chaîne de charactères dans un terminal</li>
-            </ul>
-            <li>Langage HTML / CSS :</li>
-            <ul>
-                <li>Création d'un site internet basique avec système de connexion</li>
-            </ul>
-            <li>Langage SQL :</li>
-            <ul>
-                <li>Base de données nécessaire à la création du site internet</li>
-            </ul>
-        </ul><hr>
+        <div class="container px-4 py-5" id="hanging-icons">
+            <h2 class="pb-2 border-bottom">Compétences</h2>
+            <div class="row g-4 py-5 row-cols-1 row-cols-lg-3">
+              <div class="col d-flex align-items-start">
+                <div class="icon-square text-body-emphasis bg-body-secondary d-inline-flex align-items-center justify-content-center fs-4 flex-shrink-0 me-3">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-braces" viewBox="0 0 16 16">
+                        <path d="M2.114 8.063V7.9c1.005-.102 1.497-.615 1.497-1.6V4.503c0-1.094.39-1.538 1.354-1.538h.273V2h-.376C3.25 2 2.49 2.759 2.49 4.352v1.524c0 1.094-.376 1.456-1.49 1.456v1.299c1.114 0 1.49.362 1.49 1.456v1.524c0 1.593.759 2.352 2.372 2.352h.376v-.964h-.273c-.964 0-1.354-.444-1.354-1.538V9.663c0-.984-.492-1.497-1.497-1.6M13.886 7.9v.163c-1.005.103-1.497.616-1.497 1.6v1.798c0 1.094-.39 1.538-1.354 1.538h-.273v.964h.376c1.613 0 2.372-.759 2.372-2.352v-1.524c0-1.094.376-1.456 1.49-1.456V7.332c-1.114 0-1.49-.362-1.49-1.456V4.352C13.51 2.759 12.75 2 11.138 2h-.376v.964h.273c.964 0 1.354.444 1.354 1.538V6.3c0 .984.492 1.497 1.497 1.6"/>
+                    </svg>
+                </div>
+                <div>
+                  <h3 class="fs-2 text-body-emphasis">Langage C</h3>
+                    <p>Projet graphique, refonte d'un jeu type “Duck Hunt”.<br>Projet visant à afficher une chaîne de charactères dans un terminal.</p>
+                </div>
+              </div>
+              <div class="col d-flex align-items-start">
+                <div class="icon-square text-body-emphasis bg-body-secondary d-inline-flex align-items-center justify-content-center fs-4 flex-shrink-0 me-3">
+                    <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="40" height="40" viewBox="0 0 48 48">
+                        <polygon fill="#e7a42b" points="8,5 42,5 38,39 25,43 11,39"></polygon><polygon fill="#f2bf22" points="38.63,8 35.25,36.71 25,39.86 25,8"></polygon><polygon fill="#faf9f8" points="25,21 26,23 25,25 15.79,25 16.64,12 25,12 26,14 25,16 21.03,16 20.7,21"></polygon><polygon fill="#ebebeb" points="24.9,32.57 25,32.54 26,35 25,36.72 24.94,36.74 16.61,34.36 16.05,28 20.07,28 20.35,31.27"></polygon><polygon fill="#fff" points="34.07,21 32.5,34.42 25,36.72 25,32.54 28.83,31.36 29.57,25 25,25 25,21"></polygon><polygon fill="#fff" points="34.92,18 30.93,18 30.67,16 25,16 25,12 34.13,12 34.3,13.26"></polygon>
+                    </svg>
+                </div>
+                <div>
+                  <h3 class="fs-2 text-body-emphasis">Langage HTML / CSS et Javascript</h3>
+                  <p>Création d'un site internet basique avec système de connexion.<br>Formation développeur full-stack en ligne sur la plateforme Udemy.</p>
+                </div>
+              </div>
+              <div class="col d-flex align-items-start">
+                <div class="icon-square text-body-emphasis bg-body-secondary d-inline-flex align-items-center justify-content-center fs-4 flex-shrink-0 me-3">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-filetype-sql" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M14 4.5V14a2 2 0 0 1-2 2v-1a1 1 0 0 0 1-1V4.5h-2A1.5 1.5 0 0 1 9.5 3V1H4a1 1 0 0 0-1 1v9H2V2a2 2 0 0 1 2-2h5.5zM0 14.841a1.13 1.13 0 0 0 .401.823q.194.162.478.252c.284.09.411.091.665.091q.507 0 .858-.158.355-.159.54-.44a1.17 1.17 0 0 0 .187-.656q0-.336-.135-.56a1 1 0 0 0-.375-.357 2 2 0 0 0-.565-.21l-.621-.144a1 1 0 0 1-.405-.176.37.37 0 0 1-.143-.299q0-.234.184-.384.187-.152.513-.152.214 0 .37.068a.6.6 0 0 1 .245.181.56.56 0 0 1 .12.258h.75a1.1 1.1 0 0 0-.199-.566 1.2 1.2 0 0 0-.5-.41 1.8 1.8 0 0 0-.78-.152q-.44 0-.776.15-.337.149-.528.421-.19.273-.19.639 0 .302.123.524t.351.367q.229.143.54.213l.618.144q.31.073.462.193a.39.39 0 0 1 .153.325q0 .165-.085.29A.56.56 0 0 1 2 15.31q-.167.07-.413.07-.176 0-.32-.04a.8.8 0 0 1-.248-.115.58.58 0 0 1-.255-.384zm6.878 1.489-.507-.739q.264-.243.401-.6.138-.358.138-.806v-.501q0-.556-.208-.967a1.5 1.5 0 0 0-.589-.636q-.383-.225-.917-.225-.527 0-.914.225-.384.223-.592.636a2.14 2.14 0 0 0-.205.967v.5q0 .554.205.965.208.41.592.636a1.8 1.8 0 0 0 .914.222 1.8 1.8 0 0 0 .6-.1l.294.422h.788ZM4.262 14.2v-.522q0-.369.114-.63a.9.9 0 0 1 .325-.398.9.9 0 0 1 .495-.138q.288 0 .495.138a.9.9 0 0 1 .325.398q.115.261.115.63v.522q0 .246-.053.445-.053.196-.155.34l-.106-.14-.105-.147h-.733l.451.65a.6.6 0 0 1-.251.047.87.87 0 0 1-.487-.147.9.9 0 0 1-.32-.404 1.7 1.7 0 0 1-.11-.644m3.986 1.057h1.696v.674H7.457v-3.999h.79z"/>
+                    </svg>
+                </div>
+                <div>
+                  <h3 class="fs-2 text-body-emphasis">Langage PHP / SQL</h3>
+                    <p>Base de données nécessaire à la création du site internet.</p>
+                </div>
+              </div>
+            </div>
+          </div>
         <h2>Autres :</h2>
         <ul>
             <li><a href="./Hobbies.html">Mes centres d'intérêts</a></li>
